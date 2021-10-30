@@ -1,0 +1,346 @@
+.charsheet {
+
+}
+
+.charsheet .sheet-Attribute {
+	width:80px;
+	display:inline-block;
+}
+
+.charsheet .sheet-spanSubTitle {
+	display:inline-block;
+}
+
+.charsheet .sheet-TopPanel {
+
+	width:804px;
+	float:left;
+	border: 1px solid black;
+	border-radius:10px;
+	padding:5px;
+	margin:2px;
+}
+
+.charsheet .sheet-AttributePanel {
+	float:left;
+	width:200px;
+	border: 1px solid black; 
+	border-radius:10px;
+	padding:5px;	
+	height:600px;
+	margin:2px;
+}
+
+.charsheet .sheet-FreePointsPanel {
+	float:left;
+	width:200px;
+	margin-top:5px;
+}
+
+.charsheet .sheet-StatusPanel { 
+	width:588px;
+	float:left;
+	display:fixed;
+	border: 1px solid black; 
+	border-radius:10px;	
+	padding:5px;
+	height:110px;
+	margin:2px;
+}
+
+.charsheet .sheet-TagPanel {
+	width:588px;
+	float:left;
+	display:fixed;
+	border: 1px solid black; 
+	border-radius:10px;	
+	padding:5px;
+	height:474px;
+	margin:2px
+}
+
+.charsheet .sheet-bottomPanel {
+	width:804px;
+	float:left;
+	display:fixed;
+	padding:5px;
+	border: 1px solid black; 
+	border-radius:10px;	
+}
+
+.charsheet .sheet-EquipmentListPanel {
+	width:388px;
+	height:300px;
+	float:left;
+	display:fixed;
+	padding:5px;
+	border: 1px solid black; 
+	border-radius:10px;	
+}
+
+.charsheet .sheet-EquipmentListTasks {
+	width:388px;
+	height:300px;
+	float:right;
+	display:fixed;
+	padding:5px;
+	border: 1px solid black; 
+	border-radius:10px;		
+}
+
+.charsheet .sheet-RollDiffPanel {
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:800px;
+	float:left;
+	border-top:1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.charsheet .sheet-SkillPanel {
+	width:794px;
+	float:left;
+	padding:5px;	
+	border-top:1px solid black;
+
+}
+
+.charsheet .sheet-AbilitiesPanel {
+	width:790px;
+	float:left;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+	
+
+.charsheet .sheet-tagText {
+		width:275px;
+}
+
+.charsheet .sheet-tagRank {
+		width:50px;
+}
+
+.charsheet .sheet-tagType {
+	width:75px;
+}
+
+.charsheet .sheet-inline-label { 
+    white-space: nowrap;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float:left;     
+    }
+	
+.charsheet .sheet-skillName {
+	width:150px;
+}	
+.charsheet .sheet-skillRoll {
+	width:60px;
+}
+
+.charsheet .sheet-abilityRoll {
+	width:100px;
+}
+
+.charsheet .sheet-skillInfo {
+		width:175px;
+}
+
+.charsheet .sheet-skillSpecialty {
+		width:175px;
+}
+
+.charsheet .sheet-armorBlock {
+	width:275px;
+	padding:5px;
+	border-bottom: .5px solid #D3D3D3;	
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.charsheet .sheet-weaponBlock {
+	width:470px;
+	padding:5px;
+	border-bottom: .5px solid #D3D3D3;	
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+.charsheet .sheet-weaponBlockFlex {
+	width:470px;
+	padding:5px;
+	border-bottom: .5px solid #D3D3D3;	
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+}
+
+.charsheet .sheet-weaponAttackButton {
+		width:50px;
+		height:50px;
+		float:left;
+		margin-right:10px;
+		font-size:1em;
+		font-weight:bold;
+}
+
+.charsheet .sheet-SecondaryAttribute {
+	display:none;
+}
+
+.sheet-SkillInfoDiv {
+	display:inline;
+}
+
+.sheet-skillNameHdn[value="profession"] ~ div.sheet-SkillInfoDiv {
+	display:none;
+}
+
+.sheet-skillNameHdn[value="profession"] ~ div.sheet-SecondaryAttribute {
+	display:inline;
+}
+	
+/* The switch - the box around the slider */
+.sheet-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.sheet-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sheet-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* Rounded sliders */
+.sheet-slider.sheet-round {
+  border-radius: 17px;
+}
+
+.sheet-slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sheet-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .sheet-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.sheet-slider.sheet-round:before {
+  border-radius: 50%;
+}
+
+input:checked + .sheet-slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+  
+.sheet-radioTag {
+	display: inline-block;
+}
+
+.sheet-radioTag label {
+	display: inline;
+	width:60px;
+}
+
+.sheet-radioTag input[type=radio] {
+  opacity:0;
+  width:0;
+}
+
+.sheet-radioTag input[type=radio] + span {
+   display: inline-block;
+   border: 1px solid #eee;
+   height:20px;
+   margin-right: 0px;
+   color: #eee;
+   float:left;
+}
+
+.sheet-radioTag input[type=radio]:checked + span {
+   background: #eee;
+   color: #000;
+}  
+
+.sheet-radioTag svg {
+	fill: rgb(242, 242, 242);
+	height: 3.6rem;
+	width: 3.6rem;
+	margin: 0.2rem;
+}
+
+.sheet-radioTag input[type=radio]:checked + svg {
+   background: #eee;
+   color: #000;	
+}
+
+.sheet-rollDiff {
+	width:60px;
+	height:15px;
+	font-size:10px;
+	padding:3px;
+	text-align:center;
+}
+
+/*Configure the tab buttons*/
+.sheet-tabSkills,
+.sheet-tabEquipment,
+.sheet-tabCombat {
+    display: none;
+}
+
+/* show the selected tab */
+.sheet-tabsBottomtoggle[value="tabSkills"] ~ div.sheet-tabSkills,
+.sheet-tabsBottomtoggle[value="tabEquipment"] ~ div.sheet-tabEquipment,
+.sheet-tabsBottomtoggle[value="tabCombat"] ~ div.sheet-tabCombat {
+    display: block;
+}
+
+.sheet-woundButton {
+	width:60px;
+	display:inline;
+}
+
+.sheet-woundLevel[value="1"] ~ div.sheet-woundButton,
+.sheet-woundLevel[value="2"] ~ div.sheet-woundButton {
+    display: inline;
+}
+
+.sheet-woundLevel[value="3"] ~ div.sheet-woundButton {
+    display: none;
+}
